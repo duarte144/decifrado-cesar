@@ -7,10 +7,10 @@ def cifrar_letra(letra: str, clave: int, abs: str) -> str:
     return letra 
 
 def cifrar_mensaje(mensaje: str, clave: int):
-    alfabeto = string.ascii_uppercase + string.ascii_lowercase + string.digits +  " "
+    abs = string.ascii_uppercase + string.ascii_lowercase + string.digits +  " "
     
     for letra in mensaje:
-        print(cifrar_letra(letra, clave, alfabeto), end="")  
+        print(cifrar_letra(letra, clave, abs), end="")  
     print()  
 
 def main():
